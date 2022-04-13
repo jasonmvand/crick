@@ -1,0 +1,13 @@
+Options -Indexes
+
+RewriteEngine on
+RewriteBase /
+RewriteRule ^robots.txt - [L]
+RewriteRule ^ index.php [L]
+
+<Files 403.shtml>
+order allow,deny
+allow from all
+</Files>
+
+deny from 64.28.87.251
